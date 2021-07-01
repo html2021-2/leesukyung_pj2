@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@function calc-vw1920($value) {
+    @return #{$value / (1920 / 100)}vw;
+}
+@function calc-vw1440($value) {
+    @return #{$value / (1440 / 100)}vw;
+}
+@function calc-vw1194($value) {
+    @return #{$value / (1194 / 100)}vw;
+}
+@function calc-vw375($value) {
+    @return #{$value / (375 / 100)}vw;
+}

@@ -1,0 +1,83 @@
+body, h1, h2, h3, p, ul, button, input {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit; }
+
+input {
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer; }
+
+address {
+  font-style: normal; }
+
+#skip a {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 1000; }
+
+#skip a:focus {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  left: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.blind {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); }
+
+.red {
+  color: #E32425; }
+
+.yellow {
+  color: #FFB300; }
+
+body {
+  font-family: "roboto", "noto sans kr";
+  font-size: 16px;
+  font-weight: 400;
+  color: #222; }
+
+body * {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=common.css.map */

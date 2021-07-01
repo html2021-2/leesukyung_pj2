@@ -1,0 +1,61 @@
+@mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+@mixin translate-50 {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@mixin translateX-50 {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+@mixin translateY-50 {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    transition: $value;
+}
+@mixin flex {
+    display: -webkit-box;
+    display: -mox-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+@mixin flex-wrap($value: wrap){
+    -webkit-flex-wrap: $value;
+    flex-wrap: $value;
+}
+@mixin justify-content($value: center) {
+    -webkit-justify-content: $value;
+    justify-content: $value;
+}
+@mixin align-items($value: center) {
+    -webkit-align-items: $value;
+    align-items: $value;
+}
+@mixin keyframes($aniName) {
+    @-webkit-keyframes #{$aniName} {@content;}
+    @-moz-keyframes #{$aniName} {@content;}
+    @keyframes #{$aniName} {@content;}
+}
+@mixin animation($value){
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    animation: $value;
+}

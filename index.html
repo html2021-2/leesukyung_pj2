@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시도해보기</title>
+  <link rel="icon" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" href="images/favicon/favicon-16x16.png">
+  <link rel="icon" href="images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="images/favicon/apple-icon-114x114.png">
+  <link rel="shortcut icon" href="images/favicon/android-icon-96x96.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/1e50193184.js" crossorigin="anonymous"></script>  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pass.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#cnt1">본문 바로가기</a>
+    </div>
+    <header id="pcHeader" class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span class="logo_txt">KODAK<br><span>POLAROID</span></span>
+            </a>
+        </h1>
+        <nav id="pGnb">
+            <ul>
+                <li>
+                    <a href="">SHOP</a>
+                    <ul>
+                        <li><a href="">카메라</a></li>
+                        <li><a href="">프린터</a></li>
+                        <li><a href="">홈프린터</a></li>
+                        <li><a href="">카트리지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">PHOTO BOOK</a>
+                    <ul>
+                        <li><a href="">KODAK RETRO</a></li>
+                        <li><a href="">KODAK STYLE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">COMMUNITY</a>
+                    <ul>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">EVENT</a></li>
+                        <li><a href="">CS CENTER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <div class="shop">
+                <img src="images/pc/shop.png" alt="장바구니">
+            </div>
+            <button type="button" class="search_open">
+                <img src="images/pc/search.png" alt="검색창 열기">
+            </button>
+            <div class="search_wrap">
+                <div class="top">
+                    <label for="keyword_search" class="blind"></label>
+                    <input type="text" placeholder="키워드 입력" class="keyword_search">
+                    <button type="button" id="search_enter">
+                        <img src="images/pc/search_icon_big.png" alt="검색">
+                    </button>
+                </div>
+                <ul class="bottom">
+                        <li><a href="">#코닥미니샷</a></li>
+                        <li><a href="">#이벤트</a></li>
+                        <li><a href="">#코닥 포토프린터</a></li>
+                        <li><a href="">#포토북</a></li>
+                        <li><a href="">#카트리지</a></li>
+                </ul>
+                <a role="button" class="search_close" href="" ></a>
+            </div>
+        </div>
+    </header>
+    <header id="mHeader" class="header">
+        <h1 class="logo">
+            <a href="index.html"><span class="blind">코닥 폴라로이드</span></a>        
+        </h1>
+        <button type="button" class="gnb_open_btn">
+            <span class="blind">주메뉴 열기</span>
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+        <nav id="mGnb">
+            <ul>
+                <li>
+                    <a href="">SHOP</a>
+                    <ul>
+                        <li><a href="">카메라</a></li>
+                        <li><a href="">프린터</a></li>
+                        <li><a href="">홈프린터</a></li>
+                        <li><a href="">카트리지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">PHOTO BOOK</a>
+                    <ul>
+                        <li><a href="">KODAK RETRO</a></li>
+                        <li><a href="">KODAK STYLE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="last">COMMUNITY</a>
+                    <ul>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">EVENT</a></li>
+                        <li><a href="" class="dep2_last last">CS CENTER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="util">
+            <button type="button" class="search_open">
+                <img src="images/pc/search.png" alt="검색창 열기">
+            </button>
+            <div class="search_wrap">
+                <div class="top">
+                    <label for="keyword_search" class="blind"></label>
+                    <input type="text" placeholder="키워드 입력" class="keyword_search">
+                    <button type="button" id="search_enter">
+                        <img src="images/mobile/search_big.png" alt="검색">
+                    </button>
+                </div>
+                <ul class="bottom">
+                        <li><a href="">#코닥미니샷</a></li>
+                        <li><a href="">#이벤트</a></li>
+                        <li><a href="">#코닥 포토프린터</a></li>
+                        <li><a href="">#포토북</a></li>
+                        <li><a href="">#카트리지</a></li>
+                </ul>
+                <a role="button" class="search_close" href=""></a>
+            </div>
+        </div>
+    </header>
+    <section id="cnt1">
+        <h2 class="blind">1888년부터 시작된 KODAK</h2>
+        <div class="since_box">
+            <div class="since_txt">
+                <strong class="since">since</strong>
+                <strong class="year">1888</strong>
+            </div>
+            <div class="dark">
+                <p><span class="yellow"><span class="dp_change">“당신이 버튼을 누르면</span> 나머지는 우리가 한다”</span>라는 슬로건으로</p>
+                <p><span class="di_change">George Eastman은</span> 최초의 간단한 카메라를 손에 쥐었습니다.</p>
+                <p class="not_in_mobile">그는 1888 년부터 소비자에게 번거롭고 복잡한 사진 찍는 과정을<br>
+                모든 사람이 사용하기 쉽게 만들어냈습니다.</p>
+            </div>
+        </div>
+        <div class="first_box">
+            <div class="circle">
+                <p>Eastman이 처음 선보인</p>
+                <div class="red">The Kodak camera</div>
+            </div>
+            <img class="filmcase" src="images/pc/film_big.png" alt="">
+            <img class="camera" src="images/pc/cnt1_camera.png" alt="이스트만이 처음 선보인 갈색상자모양의 카메라">
+        </div>
+    </section>
+    <section id="cnt2">
+        <div class="sub_tit">
+            <h2>새로워진 <span class="red">Kodak</span>,</h2>
+            <p>Kodak만의 레트로 감성을 살린 <br> 새로워진 디자인으로 돌아온<br>폴라로이드와 포토프린터를 <span class="dp_change">만나보세요</span></p>
+        </div>
+        <ul class="up">
+            <li><img src="images/pc/cnt2_pattern1.png" alt=""></li>
+            <li>
+                <a href=""><img src="images/pc/cnt2_camera1.png" alt="코닥 미니샷2 레트로 폴라로이드 카메라"></a>
+            </li>
+            <li>
+                <a href=""><img src="images/pc/cnt2_camera2.png" alt="코닥 미니샷3 레트로 폴라로이드 카메라"></a>
+            </li>
+            <li><img src="images/pc/cnt2_pattern2.png" alt=""></li>
+        </ul>
+        <ul class="down">
+            <li><img src="images/pc/cnt2_pattern3.png" alt=""></li>
+            <li>
+                <a href=""><img src="images/pc/cnt2_camera3.png" alt="코닥 미니 2 레트로 휴대용 포토프린터"></a>
+            </li>
+            <li><img src="images/pc/cnt2_pattern4.png" alt=""></li>
+        </ul>
+    </section>
+    <section id="cnt3">
+        <div class="tit_txt">
+            <h2>폴라로이드 카메라,<br> <span class="red">포토프린터</span>와 하나되다</h2>
+            <p><span class="dp_change">블루투스로 핸드폰과</span> 포토프린터를 연결할 수 있습니다</p>
+            <p><span class="dp_change">핸드폰에 저장된 사진을</span> 포토프린터로 인쇄해보세요</p>
+        </div>
+        <div class="motion">
+            <span class="blind">1단계: 핸드폰이 오른쪽에 위치한 카메라와 블루투스로 연결되어 핸드폰은 오른쪽을 살짝 기울어졌다 돌아오는 모션을 한 후 핸드폰과 카메라 사이에 있던 블루투스 아이콘이 깜빡입니다. 2단계: 핸드폰은 사라지고 핸드폰이 위치했던 자리에 카메라가 위치하면서 작은 사진이 인쇄됩니다. 인쇄되어 나온 사진은 확대되어 카메라 오른편에 위치합니다<div class=""></div> </span>
+            <div class="vanish">
+                <img src="images/pc/cnt3_phone.png" alt="" class="phone">
+                <img src="images/pc/cnt3_bluetooth.png" alt="" class="bluetooth">
+            </div>
+            <div class="print">
+                <div class="camera"></div>
+                <div class="img_m"></div>
+                <div class="img_b"></div>
+            </div>
+        </div>
+    </section>
+    <section id="cnt4">
+        <h2>Kodak의 <br><span class="yellow">4PASS</span> <br>필름인화기술</h2>
+        <span class="blind">4pass방식으로 사진이 출력됐을때 볼 수 있는 yellow margenta cyan 색상의 사진이 순차적으로 보여지고 그후 최종적으로 출력되는 이미지만 보여진다</span>
+        <div class="pass_wrapper">
+            <div class="before">
+                <img class="content-image" src="images/pc/cnt4_4pass.jpg" draggable="false"/>
+            </div>
+            <div class="after">
+                <img class="content-image" src="images/pc/cnt4_original.jpg" draggable="false"/>
+            </div>
+            <div class="scroller">
+                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
+                <div class="point">
+                    <span class="blind">마우스를 누른채로 오른쪽으로 밀어보세요</span>
+                </div>
+            </div>
+        </div>
+        <div id="pass_delaySlide">
+            <img src="images/mobile/pass_1.jpg" alt="" class="pass">
+            <img src="images/mobile/pass_2.jpg" alt="" class="pass">
+            <img src="images/mobile/pass_3.jpg" alt="" class="pass">
+            <img src="images/mobile/pass_4.jpg" alt="" class="top_img">
+        </div>
+        <div class="txt_box">
+            <h3><span class="dp_change">모든 순간을</span><span class="dp_change">레트로한 감성으로</span> 인화하세요.</h3>
+            <p>
+                1882년 <br>George Eastman이 현대식 필름의 초기 형태를 만들어내고<br><span class="dp_change">세계 최초의 감광필름을 만들어 양산화에</span>성공함으로써 Kodak의 역사가 시작되었습니다.
+            </p>
+            <p class="not_in_mobile">
+                Koak 4PASS필름은 140여년의 시간을 거치며<br>Kodak 기술이 모두 집약된 필름입니다.<br>가장 코닥다운 방식으로 계승된 4PASS 필름으로<br>모든 순간을 레트로한 감성으로 인화하세요.
+            </p>
+        </div>
+    </section>
+    <section id="cnt5">
+        <h2>EVENT</h2>
+        <p><span class="dp_change">사진 찍는 즐거움!</span> 코닥이 강력추천하는 6월 이벤트 만나보세요.</p>
+        <ul class="event_pc">
+            <li>
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">발렌타인데이</h3>
+                    <p>이벤트 기간 : 21.2.2(화) ~ 2.16(화)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+            <li class="on">
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">집콕챌린지</h3>
+                    <p>이벤트 기간 : 21.1.4(금) ~ 1.31(일)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">크리스마스 이벤트</h3>
+                    <p>이벤트 기간 : 20.12.15(화) ~ 12/25(금)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">Hear ME, Kodak</h3>
+                    <p>이벤트 기간 : 20.9.9(수) ~ 9.17(목)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">코닥 레트로 매트</h3>
+                    <p>이벤트 기간 : 20.9.3(목) ~ 9.18(금)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <div class="event_img"></div>
+                <div class="event_txt">
+                    <h3 class="event_tit">신규회원 프로모션</h3>
+                    <p>이벤트 기간 : 20.9.1(화) ~ 9/30(수)</p>
+                    <a href="">자세히 보기</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="accordion">
+            <li class="list1">
+                <h3><button type="button" id="acdnHeader1" class="acdnHeader" aria-controls="acdnPanel1"></button></h3>
+                <div id="acdnPanel1" class="acdnPanel" aria-labelledby="acdnHeader1" role="region">
+                    <img src="images/mobile/event1.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">발렌타인데이</h3>
+                        <p>이벤트 기간 : 21.2.2(화) ~ 2.16(화)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+            <li class="on">
+                <h3><button type="button" id="acdnHeader2" class="acdnHeader" aria-controls="acdnPanel2"><span class="blind">이벤트2 페이지 열기</span></button></h3>
+                <div id="acdnPanel2" class="acdnPanel" aria-labelledby="acdnHeader2" role="region">
+                    <img src="images/mobile/event2.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">집콕챌린지</h3>
+                        <p>이벤트 기간 : 21.1.4(금) ~ 1.31(일)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3><button type="button" id="acdnHeader3" class="acdnHeader" aria-controls="acdnPanel3"><span class="blind">이벤트3 페이지 열기</span></button></h3>
+                <div id="acdnPanel3" class="acdnPanel" aria-labelledby="acdnHeader3" role="region">
+                    <img src="images/mobile/event3.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">크리스마스 이벤트</h3>
+                        <p>이벤트 기간 : 20.12.15(화) ~ 12/25(금)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3><button type="button" id="acdnHeader4" class="acdnHeader" aria-controls="acdnPanel4"><span class="blind">이벤트4 페이지 열기</span></button></h3>
+                <div id="acdnPanel4" class="acdnPanel" aria-labelledby="acdnHeader4" role="region">
+                    <img src="images/mobile/event4.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">Hear ME, Kodak</h3>
+                        <p>이벤트 기간 : 20.9.9(수) ~ 9.17(목)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3><button type="button" id="acdnHeader5" class="acdnHeader" aria-controls="acdnPanel5"><span class="blind">이벤트5 페이지 열기</span></button></h3>
+                <div id="acdnPanel5" class="acdnPanel" aria-labelledby="acdnHeader5" role="region">
+                    <img src="images/mobile/event5.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">코닥 레트로 매트</h3>
+                        <p>이벤트 기간 : 20.9.3(목) ~ 9.18(금)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+            <li class="list6">
+                <h3><button type="button" id="acdnHeader6" class="acdnHeader" aria-controls="acdnPanel6"><span class="blind">이벤트6 페이지 열기</span></button></h3>
+                <div id="acdnPanel6" class="acdnPanel" aria-labelledby="acdnHeader6" role="region">
+                    <img src="images/mobile/event6.jpg" alt="">
+                    <div class="event_txt">
+                        <h3 class="event_tit">신규회원 프로모션</h3>
+                        <p>이벤트 기간 : 20.9.1(화) ~ 9/30(수)</p>
+                        <a href="">자세히 보기</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer id="footer" class="clearfix">
+        <ul class="foot_link">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">이용약관</a></li>
+            <li class="big_font"><a href="">개인정보처리방침</a></li>
+        </ul>
+        <ul class="sns">
+            <li>
+                <a href="https://www.instagram.com/p/CQho6P4Jl9L/" target="_blank"><img src="images/pc/instagram.png " alt="인스타그램"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/kodakstyle.kr/" target="_blank"><img src="images/pc/facebook.png " alt="페이스북"></a>
+            </li>
+            <li>
+                <a href="https://vimeo.com/554544974" target="_blank"><img src="images/pc/vimeo.png " alt="vimeo"></a>
+            </li>
+        </ul>
+        <div class="about_kodak">
+            <strong>About Kodak</strong>
+            <address>
+                <p>대표번호 :070-5213-7814 메일 :sales@prinics.co.kr</p>
+                <p>주소 :경기도 수원시 권선구 산업로156번길 197-50 <span class="dp_change">프리닉스개인정보관리자 :프리닉스</span></p>
+            </address>
+            <p class="copy">Copyright&copy; kodakpolaroid.co.kr all rights reserved.</p>
+        </div>
+        <div class="cs_center">
+            <strong>CS CENTER</strong>
+            <p>월요일~금요일 / AM 10:00 - PM 05:00</p>
+            <p>주말 및 공휴일은 운영하지 않습니다.</p>
+            <p>점심시간 PM 12:30 - PM 01:30</p>
+        </div>
+    </footer>
+</body>
+</html>

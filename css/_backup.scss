@@ -1,0 +1,55 @@
+#cnt4{
+    position: relative;height: calc-vw1920(1750);
+    h2{border: 20px solid $yellow;display: inline-block;padding: calc-vw1920(40) calc-vw1920(150) calc-vw1920(80) calc-vw1920(100);font-size: 50px;font-weight: 700;}
+    .pass_wrapper{
+        @include translateY-50;
+        position: absolute;left:20%;top: calc-vw1920(850);width: calc-vw1920(1300);height: calc-vw1920(869);overflow:hidden;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      
+      /* Our image information */
+      .before, .after {
+        position: absolute;top:0;left:0;width:100%;height:100%;background: #fff no-repeat center / cover; pointer-events:none;overflow: hidden;
+        img{width: calc-vw1920(1300);height: calc-vw1920(869);}
+      }
+      .scroller{
+          @include translateY-50;
+            position: absolute;left:100px;top:50%;width: 50px;height:50px;border-radius:50%;background-color: transparent;opacity:0.6;pointer-events:auto;cursor: pointer;border: 5px solid #fff;
+            &.scroller:hover{opacity:1;}
+            .scroller__thumb{width:100%;height:100%;padding:5px;}
+            &:before, &:after{content:" ";display: block;width: 7px;height: 9999px;position: absolute;left: 50%;margin-left: -3.5px;z-index: 30;transition:0.1s;}
+            .point{
+                @include translateY-50;
+                @include keyframes(moveLeft);
+                @include animation(moveLeft 1s ease-in-out infinite forwards);
+                position: absolute;left: 100px;top: 50%;width: 100px;height: 88px;background: url("../images/pc/point_right.png") no-repeat;
+            }
+      }
+      .scrolling{pointer-events:none;opacity:1;}// z-index: 1;
+      .scroller:before{
+        top:100%;
+      }
+      .scroller:after{
+        bottom:100%;
+      }
+      
+      /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+      .scroller:before,
+      .scroller:after{
+        background: #fff;
+      }
+    }
+    .txt_box{
+        position: absolute;right: 10%;top: calc-vw1920(1300);border: 20px solid $yellow;padding: 20px 50px;margin-bottom: calc-vw1920(100);
+        > *{padding: 15px 0;}
+        h3{font-size: 40px;padding-bottom: 30px;}
+        p{font-size: 18px;padding-bottom: 10px;}
+    }
+}
+#cnt4{
+    height: calc-vw1920(1850);
+    .pass_wrapper{top: calc-vw1920(900)};
+}
+#cnt4{
+    h2{font-size: 40px;}
+    .txt_box h3{font-size: 25px;}
+    h2, .txt_box{border-width: 15px;}
+}
