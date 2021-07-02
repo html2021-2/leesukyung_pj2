@@ -35,9 +35,6 @@ $(document).ready(function() {
     const $vanish = $('#cnt3 .vanish');
     let timer = 0;
 
-    let currentDirection = ''; // 현재의 방향을 나타내는 변수
-    let lastScrollY = 0; // 방향을 구하기 위해 사용되는 변수
-
     var isMobile = $(window).width() < 768 ? true : false;
 
     $(window).on('scroll resize', function () {
