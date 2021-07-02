@@ -70,7 +70,11 @@ $(document).ready(function() {
     
     $eventLi.eq(1).find('.event_txt').show();
     $eventLi.find('.event_img').on('click', function () {
-        $(this).parent().addClass('on').siblings().removeClass('on');
+        // 초기화
+        $(this).parent().siblings().removeClass('on').find('.event_txt').stop().slideUp('fast');
+
+        // 현재 설정
+        $(this).parent().addClass('on').children('.event_txt').delay(500).slideDown();
     });
 
 

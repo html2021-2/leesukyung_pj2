@@ -399,8 +399,6 @@
       #cnt5 .event_pc li .event_img {
         -webkit-transition: width 0.5s;
         transition: width 0.5s;
-        position: relative;
-        z-index: 10;
         width: 8.3333333333vw;
         height: 467px;
         background: no-repeat;
@@ -425,13 +423,13 @@
       background-position: 17% 0; }
     #cnt5 .event_pc .event_txt {
       position: absolute;
-      bottom: 0;
+      top: 100%;
       left: 0;
       background: #fff;
       width: 25.8333333333vw;
       height: 105px;
       padding: 10px 5px 25px 25px;
-      opacity: 0; }
+      display: none; }
       #cnt5 .event_pc .event_txt h3 {
         font-size: 30px;
         font-weight: 700;
@@ -457,11 +455,6 @@
       width: 25.8333333333vw;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
-    #cnt5 .event_pc li.on .event_txt {
-      -webkit-transition: opacity 0.3s 0.5s, bottom 0.5s 0.5s;
-      transition: opacity 0.3s 0.5s, bottom 0.5s 0.5s;
-      bottom: -100px;
-      opacity: 1; }
   #cnt5 .accordion {
     display: none; }
 
@@ -861,4 +854,4 @@
       visibility: visible;
       max-height: 500px; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main2.css.map */

@@ -191,7 +191,7 @@
             margin-right: 20px;position: relative;
             .event_img{
                 @include transition(width 0.5s);
-                position: relative;z-index: 10;width: calc-vw1920(160);height: 467px;background: no-repeat;cursor: pointer;
+                width: calc-vw1920(160);height: 467px;background: no-repeat;cursor: pointer;
             }
         }
         li:nth-child(1) .event_img{background-image: url("../images/pc/event1.jpg");background-position: 50% 0;}
@@ -201,17 +201,14 @@
         li:nth-child(5) .event_img{background-image: url("../images/pc/event5.jpg");background-position: 7% 0;}
         li:nth-child(6) .event_img{background-image: url("../images/pc/event6.jpg");background-position: 17% 0;}
         .event_txt{
-            position: absolute;bottom: 0;left: 0;background: #fff;width: calc-vw1920(496);height: 105px;padding: 10px 5px 25px 25px;opacity: 0;
+            position: absolute;top: 100%;left: 0;background: #fff;width: calc-vw1920(496);height: 105px;padding: 10px 5px 25px 25px;display: none;
+            // bottom: -100px;
             h3{font-size: 30px;font-weight: 700;line-height: 47px;}
             p{font-size: 18px;line-height: 35px;}
             a{font-size: 20px;font-weight: 600;position: absolute;right: 25px;top: 15px;padding: 5px 30px 5px 10px;background: url("../images/pc/btn_more.png") no-repeat 95% 55%;border: 1px solid #222;border-radius: 10px;}
             a:hover, a:focus{border-color: $yellow;color: $yellow;background-image: url("../images/pc/btmn_more_on.png");}
         }
         li.on .event_img{width: calc-vw1920(496);@include transition(all 0.5s);}
-        li.on .event_txt{
-            @include transition(opacity 0.3s 0.5s, bottom 0.5s 0.5s);
-            bottom: -100px;opacity: 1;
-        }
     }
     .accordion{display: none;} /* visibility: hidden;max-height: 0;overflow: hidden; */
 }
